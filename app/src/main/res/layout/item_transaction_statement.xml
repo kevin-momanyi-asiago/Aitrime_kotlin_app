@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:elevation="@dimen/margin_2dp">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/acc_image"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/circleImageView"
+            app:srcCompat="@drawable/ic_baseline_person_24"
+            app:strokeColor="@android:color/transparent"
+            app:strokeWidth="1dp" />
+        <LinearLayout
+            android:id="@+id/name_number_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:padding="@dimen/margin_4dp"
+            android:layout_toEndOf="@id/acc_image"
+            android:layout_marginStart="@dimen/margin_32dp"
+            >
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/transaction_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?attr/textAppearanceSubtitle1"
+                android:gravity="top"
+                tools:text="@tools:sample/full_names"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/transaction_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_4dp"
+                android:layout_gravity="bottom"
+                tools:text="@string/number"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/amount_time_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_4dp"
+            android:orientation="vertical"
+            android:layout_alignEnd="@id/name_number_layout"
+            android:layout_alignParentEnd="true">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/transaction_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?attr/textAppearanceSubtitle1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                tools:text="@string/amount"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/transaction_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_4dp"
+                android:layout_gravity="center"
+                android:gravity="bottom"
+                tools:text="@tools:sample/date/ddmmyy"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"/>
+
+</FrameLayout>

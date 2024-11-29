@@ -1,0 +1,40 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/background_launch.xml" value="0.3390625" />
+        <entry key="app/src/main/res/drawable/gradient_drawable.xml" value="0.13703703703703704" />
+        <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.3390625" />
+        <entry key="app/src/main/res/drawable/ic_favorite_black_24dp.xml" value="0.16203703703703703" />
+        <entry key="app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.3390625" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/rounded_button.xml" value="0.3390625" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.15438950554994954" />
+        <entry key="app/src/main/res/layout/fragment_buy_airtime.xml" value="0.5435168738898757" />
+        <entry key="app/src/main/res/layout/fragment_favorites.xml" value="0.16" />
+        <entry key="app/src/main/res/layout/fragment_help.xml" value="0.264" />
+        <entry key="app/src/main/res/layout/fragment_history.xml" value="0.22282608695652173" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.31875" />
+        <entry key="app/src/main/res/layout/fragment_home_host.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_points.xml" value="0.264" />
+        <entry key="app/src/main/res/layout/fragment_splash.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_welcome.xml" value="0.31875" />
+        <entry key="app/src/main/res/layout/item_favorite.xml" value="0.31875" />
+        <entry key="app/src/main/res/layout/item_redeem.xml" value="0.31875" />
+        <entry key="app/src/main/res/layout/item_transaction_statement.xml" value="0.33645833333333336" />
+        <entry key="app/src/main/res/layout/nav_header.xml" value="0.31875" />
+        <entry key="app/src/main/res/menu/bottom_navigation_menu.xml" value="0.31875" />
+        <entry key="app/src/main/res/menu/drawer_menu.xml" value="0.31875" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="app/src/main/res/xml/network_security_config.xml" value="0.21739130434782608" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

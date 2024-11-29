@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/welcomeFragment"
+        android:title="@string/home"
+        android:icon="@drawable/ic_home_black_24dp"/>
+
+    <item
+        android:id="@+id/favoritesFragment2"
+        android:title="@string/favorites"
+        android:icon="@drawable/ic_favorite_black_24dp"
+        />
+    <item
+        android:id="@+id/historyFragment2"
+        android:title="@string/history"
+        android:icon="@drawable/ic_history_black_24dp"/>
+
+    <item
+        android:id="@+id/pointsFragment2"
+        android:title="@string/points"
+        android:icon="@drawable/ic_baseline_money_24"
+        />
+    <item
+        android:id="@+id/helpFragment"
+        android:title="@string/help"
+        android:icon="@drawable/ic_help_black_24dp"/>
+
+
+
+</menu>

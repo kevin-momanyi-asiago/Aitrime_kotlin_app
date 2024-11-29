@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.perpetua.eazytopup.fragments.AirtimeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_airtime" />
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.perpetua.eazytopup.fragments.FavoritesFragment"
+        android:label="FavoritesFragment" />
+    <fragment
+        android:id="@+id/pointsFragment"
+        android:name="com.perpetua.eazytopup.fragments.PointsFragment"
+        android:label="fragment_points"
+        tools:layout="@layout/fragment_points" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.perpetua.eazytopup.fragments.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.perpetua.eazytopup.fragments.HelpFragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" />
+    <fragment android:id="@+id/placeholder" />
+</navigation>

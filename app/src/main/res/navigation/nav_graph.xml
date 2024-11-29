@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    android:label="About"
+    app:startDestination="@id/welcomeFragment">
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.perpetua.eazytopup.fragments.HelpFragment"
+        android:label="Help"
+        tools:layout="@layout/fragment_help">
+        <action
+            android:id="@+id/action_helpFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.perpetua.eazytopup.fragments.WelcomeFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_welcomeFragment_to_homeHostFragment"
+            app:destination="@id/homeHostFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_dataHostFragment"
+            app:destination="@id/dataHostFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_dataHostFragment2"
+            app:destination="@id/dataHostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeHostFragment"
+        android:name="com.perpetua.eazytopup.fragments.AirtimeHostFragment"
+        android:label="Airtime"
+        tools:layout="@layout/fragment_home_host">
+        <action
+            android:id="@+id/action_homeHostFragment_to_buyAirtimeFragment"
+            app:destination="@id/buyAirtimeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/buyAirtimeFragment"
+        android:name="com.perpetua.eazytopup.fragments.BuyAirtimeFragment"
+        android:label="Buy Airtime"
+        tools:layout="@layout/fragment_buy_airtime">
+        <argument
+            android:name="buyFor"
+            android:defaultValue="null"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_buyAirtimeFragment_to_homeHostFragment"
+            app:destination="@id/homeHostFragment" />
+    </fragment>
+    <include app:graph="@navigation/home_nav_graph" />
+    <fragment
+        android:id="@+id/rateFragment"
+        android:name="com.perpetua.eazytopup.RateFragment"
+        android:label=" Rate us"
+        tools:layout="@layout/fragment_rate" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.perpetua.eazytopup.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/historyFragment2"
+        android:name="com.perpetua.eazytopup.fragments.HistoryFragment"
+        android:label="History" />
+    <fragment
+        android:id="@+id/pointsFragment2"
+        android:name="com.perpetua.eazytopup.fragments.PointsFragment"
+        android:label="Points"
+        tools:layout="@layout/fragment_points" />
+    <fragment
+        android:id="@+id/favoritesFragment2"
+        android:name="com.perpetua.eazytopup.fragments.FavoritesFragment"
+        android:label="Favorites" />
+    <fragment
+        android:id="@+id/dataHostFragment"
+        android:name="com.perpetua.eazytopup.DataHostFragment"
+        android:label="Data"
+        tools:layout="@layout/fragment_data_host">
+        <action
+            android:id="@+id/action_dataHostFragment_to_buyDataFragment2"
+            app:destination="@id/buyDataFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/buyDataFragment2"
+        android:name="com.perpetua.eazytopup.fragments.BuyDataFragment"
+        android:label="Buy Data"
+        tools:layout="@layout/fragment_buy_data">
+        <argument
+            android:name="buyFor"
+            android:defaultValue="null"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_buyDataFragment2_to_dataHostFragment"
+            app:destination="@id/dataHostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.perpetua.eazytopup.DetailFragment"
+        android:label="Help Details"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="itemTitle"
+            app:argType="string" />
+    </fragment>
+</navigation>

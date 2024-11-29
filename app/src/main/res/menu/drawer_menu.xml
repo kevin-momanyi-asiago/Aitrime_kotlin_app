@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/welcomeFragment"
+        android:title="Home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:iconTint="@color/black"
+        />
+    <item
+        android:id="@+id/helpFragment"
+        android:title="Help"
+        android:icon="@drawable/ic_baseline_help_24"/>
+    <item
+        android:id="@+id/profileFragment"
+        android:title="About"
+        android:icon="@drawable/baseline_about_24"
+        android:iconTint="@color/black"
+        />
+
+    <item
+        android:id="@+id/rateFragment"
+        android:title="@string/rate_us"
+        android:icon="@drawable/ic_baseline_star_half_24"
+        />
+
+
+</menu>
